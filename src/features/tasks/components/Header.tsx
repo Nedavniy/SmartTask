@@ -1,4 +1,3 @@
-import React from 'react'
 import { Cog8ToothIcon, BellIcon } from '@heroicons/react/24/solid'
 
 function Header() {
