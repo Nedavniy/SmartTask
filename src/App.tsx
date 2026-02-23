@@ -1,12 +1,19 @@
-import './App.css'
-import Header from './features/tasks/components/Header.tsx'
-import Hero from './features/tasks/components/Hero.tsx'
+import Header from "./components/Layout/Header";
+import Sidebar from "./components/Layout/Sidebar";
+import Footer from "./components/Layout/Footer";
+import TasksPage from "./features/tasks/pages/TasksPage";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen bg-gray-900 flex flex-col">
       <Header />
-      <Hero />
+      <div className="flex flex-1">
+        <Sidebar />
+        <main className="flex-1 flex flex-col">
+          <TasksPage />
+          <Footer />
+        </main>
+      </div>
     </div>
   );
 }
